@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(86, 86, 235); 
+    height: 80px;
+}
+
+header div{
+    display: inline-block;
+}
+
+#carrinho{
+    margin: 10px;
+    padding: 10px;
+}
+
+#nomeSite{
+    position: absolute;
+    left: 45%;
+}
+
+main{
+    display: flex; 
+    justify-items: center;
+    justify-content: center;
+}
+
+main table{
+    border: solid 1px black;
+    width: auto; 
+    height: auto;
+}
+
+.tituloProd{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.produtos{
+    padding: 30px;
+    text-align: center;
+    border: solid 1px black;
+}
