@@ -3,35 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title>Projeto</title>
+        <link href="style.css" rel="stylesheet">
     </head>
 
-    <body font>
-        <header style="background-color: rgb(86, 86, 235); height: 80px;
-                     font-family: Arial, Helvetica, sans-serif;">
-            <div style="display: inline-block;">
+    <body>
+        <header>
+            <div id="carrinho">
                 <img src="carrinho.png" width="40px" height="40px">
             </div>
-            <div style="display: inline-block;">
+
+            <div id="nomeSite">
                 <h1>Vendas Online</h1>
             </div>
         </header>
 
-        <main style='display: flex; justify-items: center;justify-content: center;'>
-            <table border='1' style="width: auto; height: auto;">
+        <main>
+            <table>
                 <tr>
-                    <td style="padding: 30px; text-align: center;">Produtos</td> 
-                    <td style="padding: 30px; text-align: center;">Descrição</td>
-                    <td style="padding: 30px;">Comprar</td>
+                    <td class="produtos tituloProd">Produtos</td> 
+                    <td class="produtos tituloProd">Descrição</td>
+                    <td class="produtos tituloProd">Comprar</td>
                 </tr>
                 <tr>
-                    <td style="padding: 30px;"><img src="produto1.jpg"></td>
-                    <td style="padding: 30px;">Descrição do Produto........</td>
-                    <td style="padding: 30px;"><a href="">Comprar</a></td>
+                    <td class="produtos"><img src="produto1.jpg"></td>
+                    <td class="produtos">Descrição do Produto........</td>
+                    <td class="produtos"><a href="">Comprar</a></td>
                 </tr>
                 <tr>
-                    <td style="padding: 30px;"><img src="produtoCarro.jpg"></td>
-                    <td style="padding: 30px;">Descrição do Produto.........</td>
-                    <td style="padding: 30px;"><a href="">Comprar</a></td>
+                    <td class="produtos"><img src="produtoCarro.jpg"></td>
+                    <td class="produtos">Descrição do Produto.........</td>
+                    <td class="produtos"><a href="">Comprar</a></td>
                 </tr>
             </table>
         </main>
