@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <title>Projeto</title>
@@ -7,36 +7,67 @@
     </head>
 
     <body>
-        <header>
-            <div id="carrinho">
-                <img src="carrinho.png" width="40px" height="40px">
+<!----------------------------------Cabeçalho----------------------->
+        <header> 
+
+            <div id="divBusca"> <!--Caixa De Pesquisa-->
+                <input type="text" id="txtBusca" placeholder="Buscar...">
+                <a href="#"><img src="Imagens/lupaPesquisa.png" id="btnBusca" alt="Buscar" width="31" height="30"></a>
             </div>
 
-            <div id="nomeSite">
-                <h1>Vendas Online</h1>
-            </div>
+            <div id="nomeSite"><h1>Vendas Online</h1></div> <!--Nome Site-->
+
+            <div id="carrinho"><img src="imagens/carrinho.png" width="40px" height="40px"></div><!--Carrinho-->
+
         </header>
-
+<!-------------------------------------------------------------------------->
         <main>
-            <table>
+            <ul style="list-style-type: none;">  <!--categoria de produtos-->
+                <div id="divCategTitulo">
+                    Categorias
+                </div>
+                <li id="Categoria">
+                   <a href="#">- Carros</a>
+                   <a href="#">- Moda</a>
+                   <a href="#">- Livros</a>
+                   <a href="#">- Acessórios</a>
+                   <a href="#">- Eletronicos</a>
+                   <a href="#">- Jogos</a>
+                   <a href="#">- Outros+</a>
+                </li>
+            </ul>
+
+            <table id="tableProdutos">   <!--Produtos-->
                 <tr>
                     <td class="produtos tituloProd">Produtos</td> 
                     <td class="produtos tituloProd">Descrição</td>
                     <td class="produtos tituloProd">Comprar</td>
                 </tr>
+<!-------------------------Produtos--------------------------------------------------------------->                
                 <tr>
-                    <td class="produtos"><img src="produto1.jpg"></td>
-                    <td class="produtos">Descrição do Produto........</td>
-                    <td class="produtos"><a href="">Comprar</a></td>
+                    <td class="produtos"><img src="imagens/produto1.jpg"></td> <!--Imagem-->
+                    <td class="produtos">Descrição do Produto........</td> <!--Descrição-->
+                    <td class="produtos"><a href="">Comprar</a></td> <!--Botão de Compra-->
                 </tr>
                 <tr>
-                    <td class="produtos"><img src="produtoCarro.jpg"></td>
+                    <td class="produtos"><img src="imagens/produtoCarro.jpg"></td>
                     <td class="produtos">Descrição do Produto.........</td>
                     <td class="produtos"><a href="">Comprar</a></td>
                 </tr>
+                <tr>
+                    <td class="produtos"><img src="Imagens/produtoPS5.jpg"></td>
+                    <td class="produtos">Descrição do Produto.........</td>
+                    <td class="produtos"><a href="">Comprar</a></td>
+                </tr>
+<!------------------------------------------------------------------------------------------------->                
             </table>
         </main>
         
+        <footer id="rodape">
+            <div id="nomeRodape">Vendas online<br>
+                <div id="copyRodape">&copy; Vendas Online 2020</div>
+            </div>
+        </footer>
 
     </body>
 </html>
