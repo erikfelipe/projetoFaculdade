@@ -5,7 +5,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 50px;
+    /*margin: 0 50px;*/
 }
 
 a{
@@ -118,7 +118,7 @@ a{
 
 
 
-/*Olho(ver senha) - Login e Cadastro*/
+/*---------------Olho(ver senha) - Login e Cadastro-------------------*/
 
 .olho_cadastro{
     width: 30px;
@@ -134,4 +134,43 @@ a{
     top: 334px;
     right: 60px;
     
+}
+
+/*----------------Rodapé--------------*/
+
+
+#rodape{
+    background-color: #3c3d41;
+    color: white;
+    padding-top: 30px;
+    width: 100%;
+    margin: 15px 0 0 0;
+}
+
+#rodape h2{
+    font-size: 20px;
+}
+
+#rodape ul{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#rodape a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#rodape a:hover,
+#rodape a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#rodape .footer-copyright{
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
 }
