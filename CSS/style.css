@@ -59,9 +59,19 @@ a{
     top: 10px;
 }
 
+/*#sub-menu a{
+    position: relative;
+    padding: 15px;
+    top: 15px;
+
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}*/
+
 #sub-menu a:hover{
     background-color: #333;
-    color: white;
 }
 
 #apresentacao{
@@ -81,8 +91,7 @@ a{
 }
 
 #apresentacao-content p{
-    margin: 40px;
-    font-weight: bolder;
+    margin: 50px;
 }
 
 .botao{
@@ -107,7 +116,26 @@ a{
     box-shadow: inset 0 0 1em rgb(184, 14, 14), 0 0 1em rgb(255, 0, 0);
 }
 
+/*----------------Login e cadastro---------------------*/
 
+.formulario{
+    position: relative;
+    left: 33.33%;
+    text-align: center;
+    width: 33.33%;
+    padding: 15px;
+    border: 2px black solid;
+    border-radius: 50px;
+    background-color: rgb(228, 228, 228);
+}
+
+.formulario input, #inputEstado{
+    border-radius: 50px;
+}
+.btn_submit{
+    border-radius: 50px;
+    width: 100px;
+}
 
 /*---------------Olho(ver senha) - Login e Cadastro-------------------*/
 
@@ -115,15 +143,15 @@ a{
     width: 30px;
     cursor: pointer;
     position: absolute;
-    top: 418px;
-    right: 60px;
+    top: 222px;
+    right: 20px;
 }
 .olho_login{
     width: 30px;
     cursor: pointer;
     position: absolute;
-    top: 334px;
-    right: 60px;
+    top: 135px;
+    right: 20px;
     
 }
 
