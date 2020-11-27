@@ -23,5 +23,8 @@ function ValidarCadastro(){
 
     if(email_cad == "" || senha_cad == "" || nome_cad == "" || numero_cad == ""){
         alert("Campos não podem ficar vazios")
+    }else{
+        alert("Cadastro Concluido");
+        location.reload();
     }
 }
