@@ -13,9 +13,9 @@ try{
 
     $retorno = $query->fetchAll();
     if(count($retorno) > 0){
-        echo "Logado";
+        header('Location: index.html');
     }else{
-        echo "Erro no Login";
+        header('Location: login.html');
     }
     
 }catch(PDOException $e){
