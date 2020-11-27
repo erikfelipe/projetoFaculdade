@@ -1,13 +1,13 @@
 <?php
-
+$user = '3624018_hubcar';
+$password = 'devweb#g2';
 try{
-
-$proj = new PDO("mysql:host=localhost; dbname=projeto","root", "");
-$proj->exec("set names utf-8");
-echo "Conexão ok";
+    $conn = new PDO("mysql:host=fdb29.awardspace.net;dbname=3624018_hubcar", $user, $password);
+    $conn->exec("set names utf-8"); 
+    echo '<h1>Sucesso</h1><br>';
 }catch(PDOException $e){
-    echo "Erro do PDO" .$e->getMessage();
-}catch (Exception $e){
-    echo "Erro".$e->getMessage();
-}    
+    echo 'Erro de PDO' . $e->getMessage();
+}catch(Exception $e){
+    echo 'ERRO' . $e->getMessage();
+}
 ?>
