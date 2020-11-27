@@ -26,7 +26,7 @@
     </div>
 
     <section class="formulario">
-        <form action="" method="">
+        <form action="incluirCadastro.php" method="POST" target="cadastro">
             <div class="form-group">
                 <label for="inputNome">Nome:</label>
                 <input type="text" class="form-control" name="nome_cadastro" id="inputNome" placeholder="Digite seu nome...">
@@ -58,7 +58,7 @@
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-danger btn_submit" onclick="ValidarCadastro()"><a href="#" style="text-decoration: none; color: white; border-radius: 30px;">Cadastrar</a></button>
+            <button type="submit" class="btn btn-danger btn_submit" style="text-decoration: none; color: white; border-radius: 30px;" onclick="ValidarCadastro()">Cadastrar</button>
         </form>
     </section>
 
@@ -95,6 +95,8 @@
             <p>&copy 2020 Copyright - HubCar</p>
         </div>
     </footer>
+
+    <iframe name="cadastro" style="display:none;"></iframe>
 
     <script src="JS/script.js"></script>
 </body>
