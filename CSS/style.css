@@ -10,7 +10,6 @@ body{
 
 a{
     text-decoration: none;
-    color: white;
 }
 
 .navbar{
@@ -20,7 +19,7 @@ a{
 
 .navbar button{
     float: right;
-
+    
     background: #FD1B18;
     padding: 10px 37px;
     border: 2px black solid;
