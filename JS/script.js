@@ -1,21 +1,31 @@
-function ValidarCadastro(){
-    var email_cad = document.getElementById("inputEmail_cad").value;
-    var senha_cad = document.getElementById("inputSenha_cad").value;
-    var nome_cad = document.getElementById("inputNome").value;
-    var numero_cad = document.getElementById("inputNumero").value;
+function ValidarCadastro(form){
+    var email_cad = form.email_cadastro.value;
+    var senha_cad = form.senha_cadastro.value;
+    var nome_cad = form.nome_cadastro.value;
+    var numero_cad = form.numero_cadastro.value;
 
-    if(email_cad == "" || senha_cad == "" || nome_cad == "" || numero_cad == ""){
-        alert("Campos não podem ficar vazios")
+    var letras = /^[A-Za-z]+$/;
+    var tel = "[0-9()-]";
+
+    if(nome_cad != "" || senha_cad != "" || email_cad != "" || numero_cad != ""){
+        alert('Cadastro Concluido!');
+        return true;
     }else{
-        alert("Cadastro Concluido");
-        window.location.reload();
+        alert("Campos em branco não são permitidos");
+        return false;
     }
 }
 
-function entraUser(){
-    alert("Login realizado com sucesso!");
-}
-
-function erroUser(){
-    alert("Senha ou usuário incorreta!!");
+function mascara(numero_cad){
+    var letras = /^[A-Za-z]+$/;
+    var numero_cad = document.getElementById("inputNumero");
+    if(numero_cad.value.length == 0){
+        numero_cad.value = '(' + numero_cad.value;
+    }
+    if(numero_cad.value.length == 3){
+        numero_cad.value = numero_cad.value + ') '; 
+    }
+    if(numero_cad.value.length == 10){
+        numero_cad.value = numero_cad.value + '-';
+    }
 }
