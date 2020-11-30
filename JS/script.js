@@ -7,12 +7,12 @@ function ValidarCadastro(form){
     var letras = /^[A-Za-z]+$/;
     var tel = "[0-9()-]";
 
-    if(nome_cad != "" || senha_cad != "" || email_cad != "" || numero_cad != ""){
-        alert('Cadastro Concluido!');
-        return true;
-    }else{
+    if(nome_cad == "" || senha_cad == "" || email_cad == "" || numero_cad == ""){
         alert("Campos em branco não são permitidos");
         return false;
+    }else{
+        alert('Cadastro Concluido!');
+        return true;
     }
 }
 
