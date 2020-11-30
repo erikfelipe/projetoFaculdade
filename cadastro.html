@@ -26,10 +26,10 @@
     </div>
 
     <section class="formulario">
-        <form action="incluirCadastro.php" method="POST" target="cadastro">
+        <form action="incluirCadastro.php" method="POST" target="cadastro" onsubmit="return ValidarCadastro(this)">
             <div class="form-group">
                 <label for="inputNome">Nome:</label>
-                <input type="text" class="form-control" name="nome_cadastro" id="inputNome" placeholder="Digite seu nome...">
+                <input type="text" class="form-control" name="nome_cadastro" id="inputNome" placeholder="Digite seu nome..." pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
             </div>
 
             <div class="form-group">
@@ -44,8 +44,8 @@
             </div>
 
             <div class="form-group">
-                <label for="inputNumero">Número:</label>
-                <input type="tel" class="form-control" name="numero_cadastro" id="inputNumero" placeholder="Digite seu número...">
+                <label for="inputNumero">Telefone:</label>
+                <input type="tel" class="form-control" name="numero_cadastro" id="inputNumero" placeholder="Digite seu número..." maxlength="15" onkeyup="mascara(this)">
             </div>
             
             <div class="form-group">
@@ -58,7 +58,7 @@
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-danger btn_submit" style="text-decoration: none; color: white; border-radius: 30px;" onclick="ValidarCadastro()">Cadastrar</button>
+            <button type="submit" class="btn btn-danger btn_submit" style="text-decoration: none; color: white; border-radius: 30px;">Cadastrar</button>
         </form>
     </section>
 
