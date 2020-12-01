@@ -1,10 +1,9 @@
 <?php
-
+session_start();
 include_once('conexao.php');
 
 $email = $_POST['email_login'];
 $senha = $_POST['senha_login'];
-$logado = false;
 
 try{
     $query = $conn->prepare("select * from tb_user where email = :email and senha = :senha");
@@ -14,8 +13,9 @@ try{
 
     $retorno = $query->fetchAll();
     if(count($retorno) > 0){
+        $email_logado = $email;
+        $_SESSION['email_logado'] = $email_logado;
         header('Location: index.html');
-        $logado = true;
     }else{
         header('Location: login.html');
     }
