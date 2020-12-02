@@ -15,9 +15,9 @@ try{
     if(count($retorno) > 0){
         $email_logado = $email;
         $_SESSION['email_logado'] = $email_logado;
-        header('Location: index.html');
+        header("location: index.html");
     }else{
-        header('Location: login.html');
+        header("location: login.html");
     }
     
 }catch(PDOException $e){

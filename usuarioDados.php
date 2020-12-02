@@ -22,7 +22,7 @@ include_once('conexao.php');
 
         <div id="sub-menu">
             <ul>
-                <li><a href="indexDusuarioDados.php" class="links">Home</a></li>
+                <li><a href="index.html" class="links">Home</a></li>
                 <li><a href="servicos.html" class="links">Serviços</a></li>
                 <li><a href="contato.html" class="links">Contato</a></li>
                 <li><a href="sobre.html" class="links">Sobre</a></li>
