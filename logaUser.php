@@ -15,7 +15,7 @@ try{
     if(count($retorno) > 0){
         $email_logado = $email;
         $_SESSION['email_logado'] = $email_logado;
-        header("location: index.html");
+        header("location: usuarioDados.php");
     }else{
         header("location: login.html");
     }

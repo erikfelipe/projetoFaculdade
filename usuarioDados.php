@@ -36,17 +36,15 @@ include_once('conexao.php');
                     <th scope="col">Telefone</th>
                     <th scope="col">Email</th>
                     <th scope="col">Estado</th>
-                    <th scope="col">Atualizar</th>
                     <th scope="col">Deletar</th>
                 </tr>
             </thead>
 
             <tr>
             <?php
-                
                 $email_logado = $_SESSION['email_logado'];
                 $sql = "SELECT nome, numero, email, estado FROM tb_user where email = '" . $email_logado . "';";
-                
+                    
                 foreach ($conn->query($sql) as $row) {
                     echo "<tbody>";
                     echo "<tr>";
@@ -54,7 +52,6 @@ include_once('conexao.php');
                     echo "<td>".$row['numero'] . "</td>";
                     echo "<td>".$row['email'] . "</td>";
                     echo "<td>".$row['estado'] . "</td>";
-                    echo "<td><a href='atualizar.php?email=" .$row['email']. "'"."> Atualizar</a></td>";
                     echo "<td><a href='delete.php?email=".$row['email']."'"."> Deletar</a></td>";
                     echo "</tr>";
                     echo "</tbody>";
@@ -64,7 +61,6 @@ include_once('conexao.php');
             ?>
             <input type="button" value = "cadastrar" onclick="window.location.href='cadastro.html';">
             <input type="button" value = "Desconectar" onclick="<?php $_SESSION['email_logado'] = "";?> window.location.href='usuarioDados.php';">
-            
 
             </body>
             </html>
